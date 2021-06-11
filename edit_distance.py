@@ -7,7 +7,7 @@ Module for calculating Edit Distance between two strings.
 
 Created on Fri June 11 14:30:00 2021
 
-@author: InstantPants
+@author: github/instantpants
 
 algorithm_parameters={'DELETE': 1,\
                       'INSERT': 1,\
