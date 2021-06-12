@@ -55,7 +55,7 @@ def edit_distance(X, Y, **kwargs):
 
     # POPULATE FIRST ROW AND COLUMN with 0:x*INSERT:INSERT
     D[0,:] = [x for x in range(0,m*params['INSERT'],params['INSERT'])]
-    D[:,0] = [y for y in range(0,n*params['INSERT'],params['INSERT'])]
+    D[:,0] = [y for y in range(0,n*params['DELETE'],params['DELETE'])]
         
     # POPULATE EDIT TABLE
     for y in range(1, n):
