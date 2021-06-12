@@ -53,7 +53,9 @@ def edit_distance(X, Y, **kwargs):
     if params['show_steps']:
         print("ACTIONS\nDEL: {}\nINS: {}\nSUB: {}\nMAT: {}".format(params['DELETE'],params['INSERT'],params['SUBSTITUTE'],params['MATCH']))
 
-    # POPULATE FIRST ROW AND COLUMN with 0:x*INSERT:INSERT
+    # POPULATE FIRST ROW AND COLUMN
+    #   - X characters are 'inserted'
+    #   - Y characters are 'deleted'
     D[0,:] = [x for x in range(0,m*params['INSERT'],params['INSERT'])]
     D[:,0] = [y for y in range(0,n*params['DELETE'],params['DELETE'])]
         
